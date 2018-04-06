@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:id="@+id/item_window_image"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/image_x"
+        android:scaleType="fitXY" />
+    <ImageView
+        android:id="@+id/outfucusing"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#3f3f3f"
+        android:visibility="gone"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="213dp"
+        android:layout_alignBottom="@+id/item_window_image"
+        >
+
+        <ImageView
+            android:id="@+id/shape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upper_shadow_todo"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flower"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignLeft="@+id/item_window_image"
+        android:layout_alignTop="@+id/item_window_image"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/item_corrent_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="글 종결시 나옴"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/check_red"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/settings_gray"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/booklist_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/del"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/breedsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:text="견종 :"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_explantion_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/breedsTxt"
+            android:gravity="center"
+            android:text="진돗개"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/genderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/item_explantion_kind"
+            android:gravity="center"
+            android:text="성별 :"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_explantion_uni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/genderTxt"
+            android:gravity="center"
+            android:text="여아"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/localTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/item_explantion_uni"
+            android:gravity="center"
+            android:text="지역 :"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_explantion_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/localTxt"
+            android:gravity="center"
+            android:text="대전"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/item_bookmark_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/item_explantion_location"
+            android:src="@drawable/bookmark_image" />
+
+        <TextView
+            android:id="@+id/item_bookmark_num"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/item_bookmark_image"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/item_recomment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/item_bookmark_num"
+            android:src="@drawable/recomment_imgae" />
+
+        <TextView
+            android:id="@+id/item_recomment_num"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_toRightOf="@+id/item_recomment_image"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

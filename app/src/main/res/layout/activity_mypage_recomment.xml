@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:background="#ff9933"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내가 쓴 댓글"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:text="삭제"
+                android:textColor="#dc3647"
+                android:textStyle="bold"
+                android:id="@+id/txtDelete"
+                android:visibility="invisible"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+
+            <ImageButton
+                android:id="@+id/profile_recommet_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/btnx"
+                android:background="#ff9933"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/empty_window1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/comment_x"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:paddingLeft="30dp"/>
+</RelativeLayout>
+

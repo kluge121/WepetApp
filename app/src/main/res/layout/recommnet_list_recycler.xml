@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recomment_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recomment_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/profile_"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="9dp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="댓글ID"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/recomment_profile"
+        android:id="@+id/recomment_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="9dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_below="@+id/recomment_id"
+        android:id="@+id/recomment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/recomment_profile"
+        android:text="댓글 : 댓글내용 입니다."
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/recomment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="11dp"
+        android:text="시간"
+        android:textColor="#333333"
+        android:textSize="10sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recomment_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gray_line"
+        android:layout_marginTop="9dp" />
+
+</RelativeLayout>

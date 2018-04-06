@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    tools:context="wepet.projectbase.activity.IndividualProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/individual_profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff9933"
+        android:contentInsetEnd="0dp"
+        android:contentInsetLeft="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="프로필"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/individual_profile_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:background="#ff9933"
+                android:src="@drawable/btnx" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/individual_profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/individual_profile_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/profile_"/>
+
+
+    <TextView
+        android:id="@+id/individual_profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="사용자명"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/individual_tab_relative"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/individual_profile_title"
+        android:layout_marginTop="17dp"
+        android:background="#ffffff"
+        android:elevation="5dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/individual_profile_divider1"
+            android:layout_width="304dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/individual_book_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/individual_profile_divider1"
+            android:layout_alignStart="@+id/individual_profile_divider1"
+            android:layout_alignTop="@+id/individual_recomment_btn"
+            android:background="@null"
+            android:src="@drawable/individual_bookmark_select"
+
+            />
+
+        <ImageButton
+            android:id="@+id/individual_write_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/individual_profile_divider1"
+            android:layout_alignRight="@+id/individual_profile_divider1"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/individual_write_non" />
+
+
+        <ImageButton
+            android:id="@+id/individual_recomment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/individual_recomment_non" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/individ_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individual_tab_relative"
+        android:layout_marginTop="10dp"></RelativeLayout>
+
+
+
+</RelativeLayout>

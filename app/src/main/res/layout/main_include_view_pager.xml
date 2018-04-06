@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ff9933">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/mypage_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="#ff9933"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/drawer_open"
+                    />
+
+                <TextView
+                    android:id="@+id/main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mypage_open"
+                    android:text="새 주인을 찾아요"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="16dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ff9933"
+                    android:src="@drawable/search_btn"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff9933"
+            android:fillViewport="false"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#ff9933"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            app:tabTextColor="@android:color/white">
+        </android.support.design.widget.TabLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal"
+
+            android:background="#ffffff"
+            android:gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/sort1"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/recent_click"
+                android:background="#ffffff"
+                android:layout_weight="1"
+              />
+            <ImageButton
+                android:id="@+id/sort2"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/approaching_non_click"
+                android:layout_marginLeft="20dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/sort1"/>
+            <ImageButton
+                android:id="@+id/sort3"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/recomment_non_click"
+                android:layout_marginLeft="20dp"
+                android:background="#ffffff"
+               android:layout_toRightOf="@+id/sort2"/>
+            <ImageButton
+                android:id="@+id/sort4"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bookmark_non_click"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/sort3"
+                android:background="#ffffff"
+                android:layout_weight="1"/>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#e2e2e2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">>
+    </android.support.v4.view.ViewPager>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/main_write"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="38dp"
+        android:layout_marginRight="27dp"
+        android:clickable="true"
+        app:backgroundTint="#ff9933"
+        android:src="@drawable/pencil"/>
+</android.support.design.widget.CoordinatorLayout>

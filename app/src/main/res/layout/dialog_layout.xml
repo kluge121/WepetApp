@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags = "scroll|enterAlways|snap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We Chat"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/btnx"
+            android:id="@+id/chatBack" />
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_below="@+id/toolbar2">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatRecycler"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recomment_edit_window"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:background="#a99e9e"
+        android:gravity="center"
+        android:layout_below="@+id/chat_layout"
+        app:layout_anchor="@id/chat_layout"
+        app:layout_anchorGravity="bottom|end">
+
+        <EditText
+            android:id="@+id/recomment_edit_context"
+            android:layout_width="344dp"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_rect"
+            android:textColor="#999999"
+            android:hint="채팅 입력"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:textCursorDrawable="@null"
+            android:layout_marginBottom="3dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/recomment_regist"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/detail_recomment_non_input"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

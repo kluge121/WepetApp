@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "410122966322",
+    "firebase_url": "https://wepet-6e2ed.firebaseio.com",
+    "project_id": "wepet-6e2ed",
+    "storage_bucket": "wepet-6e2ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410122966322:android:9cfa28cdba75c7c9",
+        "android_client_info": {
+          "package_name": "com.example.inho.wepetproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410122966322-se3thpglkaqhgmomaje5bkbp3kvapp6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD_xH6Jf-8ZbwsxPScIVzaDnLuUfzuf7E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410122966322:android:442bf15f8f844aa4",
+        "android_client_info": {
+          "package_name": "wepet.projectbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410122966322-se3thpglkaqhgmomaje5bkbp3kvapp6f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD_xH6Jf-8ZbwsxPScIVzaDnLuUfzuf7E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

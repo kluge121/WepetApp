@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="wepet.projectbase.activity.MyProfileModification">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profile_modification"
+        android:background="#ff9933"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="16dp"
+                android:text="프로필수정"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageButton
+                android:id="@+id/profile_modification_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/btnx"
+                android:background="#ff9933"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_modification_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_modification"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/profile_" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_alignRight="@+id/profile_modification_image"
+        android:src="@drawable/camera_icon" />
+
+    <RelativeLayout
+        android:id="@+id/profile_modification_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_modification_image"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:text="닉네임은 2글자 이상 입력해주세요."
+            android:id="@+id/nicknameTxt"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+        <TextView
+            android:id="@+id/profile_modification_nickname_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/nicknameTxt"/>
+        <TextView
+            android:id="@+id/profile_modification_nickname_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="중복되는 닉네임입니다."
+            android:textColor="#dc3647"
+            android:layout_toRightOf="@+id/nicknameTxt"
+
+            android:visibility="invisible" />
+        <EditText
+            android:id="@+id/profile_modification_nickname_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_modification_nickname_title"
+            android:layout_marginLeft="18dp"
+            android:background="@null"
+            android:layout_below="@+id/profile_modification_nickname_alert"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:singleLine = "true"
+            android:lines = "1"
+            android:imeOptions="actionNext" />
+        <ImageView
+            android:id="@+id/profile_modification_divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_modification_orange_line"
+            android:layout_below="@+id/profile_modification_nickname_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_modification_relative3"
+        android:layout_below="@+id/profile_modification_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_modification_phonenum_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:text="전화번호"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp" />
+        <EditText
+            android:id="@+id/profile_modification_phonenum_edittext"
+            android:digits="0123456789"
+            android:hint="-없이 입력해주세요"
+            android:maxLength="11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_modification_phonenum_title"
+            android:layout_marginLeft="18dp"
+            android:background="@null"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:inputType="phone"
+            android:singleLine = "true"
+            android:lines = "1"/>
+        <ImageView
+            android:id="@+id/profile_modification_divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_modification_phonenum_edittext"
+            android:src="@drawable/profile_modification_orange_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/profile_modification_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_modification_relative3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/modification_select"
+        android:background="@android:color/transparent"
+
+   />
+
+
+</RelativeLayout>
